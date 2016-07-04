@@ -6,6 +6,8 @@ Simply use a controller plugin to access configuration arrays by using one line 
 ``` 
 public function indexAction()
 {
-   return new ViewModel(['itemsPerPage' => $this->application()->getSettings()->pagination->itemsPerPage]);
+   return new ViewModel([
+      'itemsPerPage' => $this->application()->getSettings()->pagination->itemsPerPage
+   ]);
 }
 ``` 
